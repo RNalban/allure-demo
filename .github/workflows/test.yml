@@ -1,7 +1,12 @@
 
 name: Automate API tests
 
-on: [ push ]
+workflow_dispatch:
+
+    pull_request:
+      branches:
+        - master
+
 
 jobs:
   build:
